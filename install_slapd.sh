@@ -9,5 +9,6 @@ echo -e "slapd slapd/internal/generated_adminpw password test" |debconf-set-sele
 echo -e "slapd slapd/password2 password admin" |debconf-set-selections
 echo -e "slapd slapd/password1 password admin" |debconf-set-selections
 
+apt-get install -y slapd ldap-utils
 sudo dpkg-reconfigure slapd
 
