@@ -30,8 +30,8 @@ for i in range(2):
   link.addInterface(iface)
   
    if i == 0:
-    node.addService(pg.Execute(shell="sh", command="sudo chmod 755 /local/repository/install_slapd.sh"))
-    node.addService(pg.Execute(shell="sh", command="/local/repository/install_slapd.sh"))
+    node.addService(pg.Execute(shell="sh", command="sudo chmod 755 /local/repository/install_server.sh"))
+    node.addService(pg.Execute(shell="sh", command="/local/repository/install_server.sh"))
   else:
     node.addService(pg.Execute(shell="sh", command="sudo chmod 755 /local/repository/install_client.sh"))
     node.addService(pg.Execute(shell="sh", command="/local/repository/install_client.sh"))
