@@ -102,7 +102,3 @@ session optional pam_systemd.so
 session optional pam_mkhomedir.so skel=/etc/skel umask=077                                                                          
 # end of pam-auth-update config
 EOF
-
-getent passwd student
-
-sudo su - student
