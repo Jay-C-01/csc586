@@ -18,6 +18,7 @@ echo -e "ldap-auth-config ldap-auth-config/ldapns/ldap-server string ldap://192.
 echo -e "ldap-auth-config ldap-auth-config/dbrootlogin boolean true" | sudo debconf-set-selections
 
 sudo apt install -y libnss-ldap libpam-ldap ldap-utils
+
 sudo chmod 777 /etc/nsswitch.conf
 cat<<EOF >/etc/nsswitch.conf
 # /etc/nsswitch.conf
