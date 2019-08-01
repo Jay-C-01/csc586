@@ -4,7 +4,7 @@ cat<<EOF >/etc/nsswitch.conf
 #
 # Example configuration of GNU Name Service Switch functionality.
 
-# `info libc "Name Service Switch"` for information about this file.
+
 passwd: compat systemd ldap
 group:  compat systemd ldap
 shadow: compat
