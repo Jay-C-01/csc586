@@ -24,8 +24,8 @@ cat<<EOF >/etc/nsswitch.conf
 # /etc/nsswitch.conf
 #
 # Example configuration of GNU Name Service Switch functionality.
-passwd:         compat systemd   ldap                                                                                                   
-group:          compat systemd   ldap                                                                                               
+passwd:         compat systemd   ldap                                                                  
+group:          compat systemd   ldap                                                                                   
 shadow:         compat                                                                                                              
 gshadow:        files                                                                                                               
                                                                                                                                     
