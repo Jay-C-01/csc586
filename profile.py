@@ -29,7 +29,7 @@ for i in range(2):
   iface.addAddress(pg.IPv4Address(prefixForIP + str(i + 1), "255.255.255.0"))
   link.addInterface(iface)
   
-   if i == 0:
+  if i == 0:
     node.addService(pg.Execute(shell="sh", command="sudo chmod 755 /local/repository/install_server.sh"))
     node.addService(pg.Execute(shell="sh", command="/local/repository/install_server.sh"))
   else:
